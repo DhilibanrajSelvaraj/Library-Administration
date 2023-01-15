@@ -75,18 +75,18 @@ class Library:
 
 
 if __name__ == '__main__':
-    AkshayLibrary = Library(["Eragon","Eragon 2","Joey's bizzare adventures","Hajime no ippo",
-                             "Fifty shades of grey"],"Akshay Library")
+    DhilibLibrary = Library(["Eragon","Eragon 2","Joey's bizzare adventures","Hajime no ippo",
+                             "Fifty shades of grey"],"Dhilib Library")
 
     dict1 = {}
     listofrentedbooks = []
-    list2 = AkshayLibrary.listofbooks
+    list2 = DhilibLibrary.listofbooks
     list2.sort()
     list3 = list2.copy()
     list3.sort()
     choice = 'y'
 
-    print(f"Welcome to {AkshayLibrary.library_name}. Select from wide range of books")
+    print(f"Welcome to {DhilibLibrary.library_name}. Select from wide range of books")
     while True:
         if choice == 'y':
             dict2 = {1:"Display Book",2:"Add Book",3:"Return Book",4:"Lend Book"}
@@ -94,16 +94,16 @@ if __name__ == '__main__':
                 print(f"Press {k} for {v}")
             inp = int(input())
             if inp == 1:
-                print(AkshayLibrary.Displaybook())
+                print(DhilibLibrary.Displaybook())
 
             elif inp == 2:
-                print(AkshayLibrary.Addbook())
+                print(DhilibLibrary.Addbook())
 
             elif inp == 3:
-                print(AkshayLibrary.Returnbook())
+                print(DhilibLibrary.Returnbook())
 
             elif inp == 4:
-                print(AkshayLibrary.Lendbook())
+                print(DhilibLibrary.Lendbook())
 
         elif choice == 'n':
             if len(listofrentedbooks) != 0:
